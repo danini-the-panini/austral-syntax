@@ -1,0 +1,25 @@
+{
+  "name": "austral-syntax",
+  "displayName": "austral-syntax",
+  "description": "Syntax hilighting for Austral Programming Language",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "austral",
+      "aliases": ["Austral", "austral"],
+      "extensions": ["aum"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "austral",
+      "scopeName": "source.austral",
+      "path": "./syntaxes/austral.tmLanguage.json"
+    }]
+  }
+}
